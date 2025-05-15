@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "393353883715",
+    "project_id": "app-encuesta-fluter",
+    "storage_bucket": "app-encuesta-fluter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393353883715:android:e50d6af4606802835964f6",
+        "android_client_info": {
+          "package_name": "com.app_encuesta_fluter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmH1wYoBTllicVpbEQzOFKfI7hOTvGM_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
