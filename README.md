@@ -20,16 +20,16 @@ La aplicación consta de cuatro pantallas principales:
 ## Capturas de Pantalla
 
 ### Pantalla de Inicio
-![Pantalla de Inicio](assets/images/inicio.png)
+<img src="https://github.com/sterling404/app_encuesta_fluter/blob/main/assets/images/inicio.png?raw=true" width="300" alt="Pantalla de Inicio">
 
 ### Pantalla de Video
-![Pantalla de Video](assets/images/video.png)
+<img src="https://github.com/sterling404/app_encuesta_fluter/blob/main/assets/images/video.png?raw=true" width="300" alt="Pantalla de Video">
 
 ### Pantalla de Encuesta
-![Pantalla de Encuesta](assets/images/encuesta.png)
+<img src="https://github.com/sterling404/app_encuesta_fluter/blob/main/assets/images/encuesta.png?raw=true" width="300" alt="Pantalla de Encuesta">
 
 ### Pantalla de Insignia
-![Pantalla de Insignia](assets/images/premio.png)
+<img src="https://github.com/sterling404/app_encuesta_fluter/blob/main/assets/images/premio.png?raw=true" width="300" alt="Pantalla de Insignia">
 
 ## Requisitos Previos
 
@@ -38,6 +38,7 @@ Para ejecutar esta aplicación necesitas:
 - Flutter SDK 3.0.0 o superior
 - Dart 2.18.0 o superior
 - Una cuenta en Firebase
+- **Un simulador de Android o un dispositivo Android físico**
 - Android Studio / VS Code
 
 ## Instrucciones de Compilación
@@ -65,6 +66,8 @@ Para ejecutar esta aplicación necesitas:
    ```
    flutter run
    ```
+   
+   **Nota importante**: Esta aplicación está diseñada para ejecutarse en un simulador de Android o un dispositivo Android físico. Para obtener mejores resultados, utiliza un simulador de Android con API 33 o superior.
 
 ## Estructura del Proyecto
 
