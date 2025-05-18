@@ -230,16 +230,7 @@ class _SurveyScreenState extends State<SurveyScreen> {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavBar(
-        currentIndex: 2,
-        onTap: (index) {
-          // Navigate back to parent widget which handles navigation
-          Navigator.of(context).pop();
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => const HomeScreen()),
-          );
-        },
-      ),
+      // Eliminando la barra de navegación duplicada
     );
   }
 }

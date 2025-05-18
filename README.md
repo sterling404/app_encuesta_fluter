@@ -20,16 +20,16 @@ La aplicación consta de cuatro pantallas principales:
 ## Capturas de Pantalla
 
 ### Pantalla de Inicio
-![Pantalla de Inicio](screenshots/home_screen.png)
+![Pantalla de Inicio](assets/images/inicio.png)
 
 ### Pantalla de Video
-![Pantalla de Video](screenshots/video_screen.png)
+![Pantalla de Video](assets/images/video.png)
 
 ### Pantalla de Encuesta
-![Pantalla de Encuesta](screenshots/survey_screen.png)
+![Pantalla de Encuesta](assets/images/encuesta.png)
 
 ### Pantalla de Insignia
-![Pantalla de Insignia](screenshots/badge_screen.png)
+![Pantalla de Insignia](assets/images/premio.png)
 
 ## Requisitos Previos
 
@@ -88,4 +88,4 @@ lib/
 
 ## Autor
 
-[Tu Nombre] - Desarrollo Móvil Multiplataforma, UNACH 2025
+Louvendy Sterling - Desarrollo Móvil Multiplataforma, UNACH 2025

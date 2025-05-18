@@ -3,6 +3,7 @@ import 'package:video_player/video_player.dart';
 import 'dart:async';
 import '../widgets/bottom_nav_bar.dart';
 import 'survey_screen.dart';
+import 'package:flutter/material.dart';
 
 class VideoScreen extends StatefulWidget {
   const VideoScreen({Key? key}) : super(key: key);
@@ -132,23 +133,45 @@ class _VideoScreenState extends State<VideoScreen> {
                     if (_videoLoaded)
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                        child: Column(
                           children: [
-                            IconButton(
-                              icon: Icon(
-                                _controller.value.isPlaying
-                                    ? Icons.pause
-                                    : Icons.play_arrow,
-                                size: 30,
-                              ),
-                              onPressed: () {
-                                setState(() {
-                                  _controller.value.isPlaying
-                                      ? _controller.pause()
-                                      : _controller.play();
-                                });
-                              },
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                IconButton(
+                                  icon: Icon(
+                                    _controller.value.isPlaying
+                                        ? Icons.pause
+                                        : Icons.play_arrow,
+                                    size: 30,
+                                  ),
+                                  onPressed: () {
+                                    setState(() {
+                                      _controller.value.isPlaying
+                                          ? _controller.pause()
+                                          : _controller.play();
+                                    });
+                                  },
+                                ),
+                                IconButton(
+                                  icon: Icon(Icons.volume_up, size: 24),
+                                  onPressed: () {
+                                    // Aquí normalmente ajustaríamos el volumen, pero solo podemos sugerir
+                                    // al usuario usar los controles de volumen del dispositivo
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text('Por favor use los controles de volumen de su dispositivo'),
+                                        duration: Duration(seconds: 2),
+                                      ),
+                                    );
+                                  },
+                                ),
+                              ],
+                            ),
+                            const Text(
+                              "Usa los controles de volumen de tu dispositivo para ajustar el audio",
+                              style: TextStyle(fontSize: 12, color: Colors.grey),
+                              textAlign: TextAlign.center,
                             ),
                           ],
                         ),
@@ -193,16 +216,7 @@ class _VideoScreenState extends State<VideoScreen> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavBar(
-        currentIndex: 1,
-        onTap: (index) {
-          // Navigate back to parent widget which handles navigation
-          Navigator.of(context).pop();
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => const HomeScreen()),
-          );
-        },
-      ),
+      // Eliminando la barra de navegación duplicada
     );
   }
 }

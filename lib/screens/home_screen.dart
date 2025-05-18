@@ -67,15 +67,10 @@ class HomeContent extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Center(
-                      child: Image.network(
-                        'https://www.unach.cl/wp-content/uploads/2021/04/LOGO-UNACH-2021-AZUL-1.png', 
+                      child: Image.asset(
+                        'assets/images/Logos-FAIN.png', 
                         height: 80,
                         fit: BoxFit.contain,
-                        errorBuilder: (context, error, stackTrace) => const Icon(
-                          Icons.school,
-                          size: 80,
-                          color: Colors.blue,
-                        ),
                       ),
                     ),
                     const SizedBox(height: 20),

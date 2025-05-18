@@ -88,12 +88,7 @@ class BadgeScreen extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavBar(
-        currentIndex: 4,
-        onTap: (index) {
-          Navigator.of(context).popUntil((route) => route.isFirst);
-        },
-      ),
+      // Eliminando la barra de navegación duplicada
     );
   }
 }
